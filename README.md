@@ -10,13 +10,8 @@ Call the get_prices method:
 
 ```rust
 pub fn get_prices(&mut self) -> Vec<(ResourceAddress, Decimal)> {
-            /*if let Some(xrd_price_info) = self.religant.get_price() {
-                if xrd_price_info.price != self.prices[0].1 {
-                    self.prices[0].1 = xrd_price_info.price;
-                }
-            }*/
             self.prices.clone()
-        }
+}
 ```
 
 As you can see, it spits out a Vec<(ResourceAddress, Decimal)>, it contains only one element: (xrd_address, xrd_price). Why? Short story: I was lazy and used something I had laying around. Good luck.
