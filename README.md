@@ -14,7 +14,7 @@ pub fn get_prices(&mut self) -> Vec<(ResourceAddress, Decimal)> {
 }
 ```
 
-As you can see, it spits out a Vec<(ResourceAddress, Decimal)>, it contains only one element: (xrd_address, xrd_price). Why? Short story: I was lazy and used something I had laying around. Good luck.
+As you can see, it spits out a ``Vec<(ResourceAddress, Decimal)>``, it contains only one element: (xrd_address, xrd_price). Why? Short story: I was lazy and used something I had laying around. Good luck.
 
 # Help meeeeeee
 Need help, contact me on tg: @octopusxrd
