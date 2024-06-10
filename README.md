@@ -8,7 +8,7 @@ Component address: component_tdx_2_1cqeh8j4wgyezttn969kf0c7644m0cc33c0jpfsc9zf77
 
 Call the get_prices method:
 
-``rust
+```rust
 pub fn get_prices(&mut self) -> Vec<(ResourceAddress, Decimal)> {
             /*if let Some(xrd_price_info) = self.religant.get_price() {
                 if xrd_price_info.price != self.prices[0].1 {
@@ -17,7 +17,7 @@ pub fn get_prices(&mut self) -> Vec<(ResourceAddress, Decimal)> {
             }*/
             self.prices.clone()
         }
-``
+```
 
 As you can see, it spits out a Vec<(ResourceAddress, Decimal)>, it contains only one element: (xrd_address, xrd_price). Why? Short story: I was lazy and used something I had laying around. Good luck.
 
